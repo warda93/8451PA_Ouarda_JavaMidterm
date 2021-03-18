@@ -1,124 +1,175 @@
 ***ANSWER ALL QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer:A programming language is a computer language programmers use to develop software programs,
+ scripts, or other sets of instructions for computers to execute.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer: Java Developer Kit contains tools which a Java developer needed to develop the Java programs,
+       and JRE to run the program.its components are:
+       Java Archive  tool combines multiple Java files/ applets into a single archive.
+       Java Compiler reads all the class information, interfaces and the other
+       codes written in Java programming language and compiles them into byte code.
+       Java Disassembler :Java Disassembler disassembles one or more classes which is passed.
+       Java Debugger:is a command-line debugger for Java classes it helps us in debugging our Java code.
 
 What is an IDE?
-Answer:
+Answer:A Java IDE is an integrated development environment for programming in Java.
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer:eclipse, NetBeans,BlueJ,JDeveloper,IntelliJ IDEA,Greenfoot...
 
 Explain the entire java life cycle.
-Answer:
+Answer: computer programs are simply lists of instructions to be carried out by the six different logical units of a computer:
+        Input Unit receives data from the input devices such as the keyboard,
+        mouse and any other peripherals
+        Memory Unit the primary memory unit (Random Access Memory(RAM)) provides fast access
+        storage of computer programs, data from the input devices and data to be sent to the output devices.
+        Arithmetic and Logic Unit (ALU) performs the arithmetic calculations on data in memory,
+         such as addition, subtraction, multiplication, division and comparison.
+        Central Processing Unit (CPU) manages the other units by sending messages to the
+        input unit to read data into the memory unit, informs the ALU which data to operate on, etc.
+        Storage Unit stores and reads data and programs in long-term storage (e.g. harddisk drive) to be
+        used at a later time.
+        Output Unit sends information from the computer to make it available outside of the computer,
+         e.g. printer, network device etc.
 
 What is a class?
-Answer:
+Answer: a class is blueprint for creating objects.
 
 What is an object?
-Answer:
+Answer:object is an instance of a class
 
 What is the entry point of an application?
-Answer:
+Answer:The main method
 
 Why is the main() static?
-Answer:
+Answer:In Java main() method is always static, so that the compiler can call it without the creation of an object or before the creation of an object of the class.
+
 
 Which class is the superclass of all classes?
-Answer:
+Answer:object
 
 What is difference between path and classpath variables?
-Answer:
+Answer:The difference between path and classpath is that path is an environment variable
+used to refer the location of Java executable files while classpath is an environment variable
+used to refer the location of the class files.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer: abstract class achieves partial abstraction (0 to 100%)
+whereas interface achieves fully abstraction (100%).
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer:No, we can't create an object of an abstract class. But we can create a reference variable
+of an abstract class. The reference variable is used to refer to the objects of derived classes
+ (subclasses of abstract class) which means we extend / implement the Abstract class / interface in a new class,and
+ create the object of this new class and then use this object as per our need.
 
 What is Access Modifier?
-Answer:
+Answer:is keyword in object-oriented languages that set the accessibility of classes, methods.
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer:Object-oriented programming combines a group of variables (properties) and functions (methods) into
+a unit called an "object."  Here are the four basic theories and what they entail:
+
+  Encapsulation  is to make sure that "sensitive" data is hidden from users
+  Abstraction is like an extension of encapsulation because it hides certain
+  properties and methods from the outside code to make the interface of the objects simpler
+  Inheritance  is to inherit attributes and methods
+  Polymorphism  is a concept by which we can perform a single action in different ways.
 
 What is Java Package and which package is imported by default?
-Answer:
-
+Answer:A package in Java is used to group related classes.user defined package,
 What is an API? List some API's that you have used so far.
-Answer:
+Answer:Java Application Programming Interface (API) is the area of Java development kit (JDK).
+An API includes classes, interfaces,packages and also their methods, fields, and constructors.
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer:Java does not support multiple inheritance. This means that a class cannot extend more than one class
 
 What is method overloading and when does it happen?
-Answer:
+Answer:Overloading is changing the method’s functionality by passing different parameters - number,
+ type, order; compile time polymorphism.
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer:an exception in java  is an event that disrupts the normal flow of the program.
+and we can use  try-catch methods to handle them.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer:This means that only one instance of that static member is created which is shared
+across all instances of the class.Static is used for a constant variable or a method that
+is same for every instance of a class.We use it by declare in a static keyword.
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer:final is a non-access modifier applicable only to a variable, a method or a class,we use it when we want to
+declare the variable or method as final or constant and can't be changed.We use it by declaring the word final.
 
 Explain the difference between final, finally and finalize?
-Answer:
+Answer:The basic difference between final, finally, and finalize is that final is an access modifier,
+ finally is a block and finalize is a method of an object class.
 
 What is a constructor?
-Answer:
+Answer:A constructor in Java is a special method that is used to initialize objects.
 
 Can we have multiple constructors in a class?
-Answer:
+Answer:A class can have multiple constructors with different types of arguments and
+ different number of arguments.
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer: It calls a default constructor.
 
 What is "this" keyword in Java? When would we use it?
-Answer:
+Answer:Keyword "this" is a reference variable in Java that refers to the current object.
 
 What is "super" keyword in Java? What are some scenarios we would use it?
-Answer:
+Answer:The "super" keyword in java is a reference variable that is used to refer parent class objects.
 
 What does JVM stand for?
-Answer:
+Answer:it stands for Java virtual Machine.
 
 Is JVM platform independent?
-Answer:
+Answer:The JVM is not platform independent.
 
 What version of Java are you using?
-Answer:
+Answer:JDK  11
 
 What does JAR stand for?
-Answer:
+Answer:JAR stands for "Java ARChive". A JAR file is basically a zip-file which contains a couple of
+ class files and a text file containing some meta information
 
 What is the difference between JDK and JVM?
-Answer:
-
+Answer:JVM is the Java Virtual Machine – it  runs Java ByteCode. The Java Development Kit
+(JDK) is a software development environment used for developing Java applications and applets
 What is the difference between JVM and JRE?
-Answer:
+Answer:JRE – Java Runtime Environment is an installation package which provides
+ environment to only run(not develop) the java program onto our machine
+ JVM – Java Virtual machine is a very important part of both JDK and JRE because
+ it is contained or inbuilt in both.
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer:compile time is that time when the code development is in progress and
+the developer tries to compile the code written to convert that into a code which a machine can interpret.
 
 What is heap?
-Answer:
+Answer:A heap is a special data structure in Java
 
 How does Java manage its memory?
-Answer:
+
+Answer:In Java, memory management is the process of allocation and de-allocation of objects,
+ called Memory management. Java does memory management automatically. Java uses an automatic
+ memory management system called a garbage collector.
 
 What is the difference between String, StringBuffer and StringBuilder?
-Answer:
+Answer:Strings are immutable which  means a constant and cannot be changed once created
+while StringBuffer and StringBuilder are mutable.
 
 What is Singleton class?
-Answer:
+Answer:a singleton class is a class that can only have one object at a time.
 
 What is Serialization and Deserialization?
-Answer:
+Answer:Serialization is a mechanism of converting the state of an object into
+a byte stream. Deserialization is the reverse process where the byte stream is
+used to recreate the actual Java object in memory.
 
 Explain the difference between While and Do..While loops?
 Answer:
