@@ -1,5 +1,7 @@
 package datastructure;
 
+import java.util.*;
+
 public class UseMap {
 
     public static void main(String[] args) {
@@ -10,6 +12,28 @@ public class UseMap {
          *
          * Store and retrieve data from/to a database table.
          */
+
+        Map<String,Integer> studentAge=new HashMap<>();
+
+        //adding key and value
+        studentAge.put("Aylan",26);
+        studentAge.put("Ceci",26);
+        studentAge.put("Amina",27);
+        studentAge.put("Ouarda",28);
+
+        // get element
+        System.out.println(studentAge.get("Ouarda"));
+
+        // remove element
+        studentAge.remove("Amina");
+
+
+        for (String st: studentAge.keySet()){
+            System.out.println("student age is : "+st);
+        }
+
+
+
 
     }
 

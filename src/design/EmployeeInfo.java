@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends employeeAbstract implements Employee{
 
     /*
     This class should implement the Employee interface. You can do that by directly implementing it, however you must
@@ -21,7 +21,13 @@ public class EmployeeInfo {
      * Make sure to declare and use static, non-static & final fields
      */
     static String companyName;
-
+    private String firstName;
+    public String name;
+    private int phoneNumber;
+    private String department;
+    public static int employeeId;
+    private static double numYearEmployment;
+    private static double salary;
     /*
      You must implement the logic for below 2 methods and
         following 2 methods are prototype as well for other methods need to be design,
@@ -31,26 +37,69 @@ public class EmployeeInfo {
     /*
      You must have/use multiple constructors
      */
-    public EmployeeInfo(int employeeId) {
+    public EmployeeInfo(String name, String companyName) {
+        super(name);
 
     }
 
-    public EmployeeInfo(String name, int employeeId) {
+    public EmployeeInfo(String name, String emailAdress, int phoneNumber, String firstName, String name1, int phoneNumber1, String department) {
+        super(name, emailAdress, phoneNumber);
+        this.firstName = firstName;
+        this.phoneNumber = phoneNumber;
+        this.department = department;
+    }
 
+    public static String getCompanyName() {
+        return companyName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public EmployeeInfo(int employeeId) {
+        super(employeeId);
+    }
+
+    @Override
+    public String getEmailAdress() {
+        return super.getEmailAdress();
     }
 
     /*
-     You need to implement the logic of this method as such:
-        It should calculate Employee bonus based on salary and performance.
-        It should return the total yearly bonus.
-            Example: 10% of salary for best performance, 8% of salary for average performance and so on.
-            You can set arbitrary number for performance, so you probably need to send 2 arguments.
-     *
-     */
-    public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
+             You need to implement the logic of this method as such:
+                It should calculate Employee bonus based on salary and performance.
+                It should return the total yearly bonus.
+                    Example: 10% of salary for best performance, 8% of salary for average performance and so on.
+                    You can set arbitrary number for performance, so you probably need to send 2 arguments.
+             *
+             */
+    public static int calculateEmployeeBonus(int numberOfYearsWithCompany,int performance, int salary) {
         int total = 0;
+        if (performance >= 80 && performance < 100) {
+            total = (int) salary * 10 * numberOfYearsWithCompany / 100;
+        } else if (performance >= 60 && performance <= 90) {
+            total = (int) salary * 8 * numberOfYearsWithCompany / 100;
+        } else if (performance >= 40 && performance <= 70) {
+            total = (int) salary * 5 * numberOfYearsWithCompany / 100;
+        } else {
+            total = (int) salary * 2 * numberOfYearsWithCompany / 100;
+        }
+        System.out.println(total);
+
+
         return total;
     }
+
+
+
+
+
 
     /*
      You need to implement the logic of this method as such:
@@ -73,6 +122,40 @@ public class EmployeeInfo {
         // Calculate pension
 
         return total;
+    }
+
+    @Override
+    public int employeeId() {
+        return employeeId;
+    }
+
+    @Override
+    public String employeeName() {
+        return name;
+    }
+
+    @Override
+    public void assignDepartment() {
+        System.out.println(department);
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefitLayout() {
+
+    }
+
+    @Override
+    public void employeeAbstract(String name, String emailAdress) {
+        super.employeeAbstract(name, emailAdress);
+    }
+
+    public EmployeeInfo(String name) {
+        super(name);
     }
 
     private static class DateConversion {
