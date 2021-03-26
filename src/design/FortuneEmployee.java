@@ -16,8 +16,18 @@ public class FortuneEmployee {
      **/
     public static void main(String[] args) {
 
+ EmployeeInfo obj = new EmployeeInfo("warda", "benbahmed");
+ PersonalInfo obj1=new PersonalInfo();
 
-
+ obj.employeeId();
+ obj.assignDepartment("IT");
+ obj.benefitLayout();
+ obj.getEmailAdress();
+ obj.setSalary(1000);
+ obj.calculateEmployeePension(10,obj.getSalary());
+ obj.calculateEmployeeBonus(10,70,obj.getSalary());
+ obj1.signUpForInsurance("");
+ obj1.benefitLayout();
 
     }
 

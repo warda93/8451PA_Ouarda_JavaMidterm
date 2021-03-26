@@ -17,13 +17,11 @@ public interface Employee {
     int employeeId();
 
     //employeeName() will return employee name
-    String employeeName();
+    String employeeName(String firstName,String lastName);
 
     //assignDepartment() will assign employee to departments
-    void assignDepartment();
+    void assignDepartment(String department);
 
-    //calculate employee salary
-    int calculateSalary();
 
     //employee benefit
     void benefitLayout();
